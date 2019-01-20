@@ -1,9 +1,20 @@
 package com.example.myapplication;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserModel {
     private int userid;
     private String username;
     private String password;
+    private final ArrayList<Integer> messageidlist = new ArrayList<>();
+
+    public ArrayList<Integer> getMessageidlist() {
+        return messageidlist;
+    }
+
+
+
 
     public int getUserid() {
         return userid;

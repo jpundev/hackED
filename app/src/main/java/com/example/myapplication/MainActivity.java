@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button login_button = findViewById(R.id.login);
         login_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
-                startActivity(new Intent(MainActivity.this, FirstActivity.class));
+                startActivity(new Intent(MainActivity.this, CreateMessageActivity.class));
             }
         });
 
