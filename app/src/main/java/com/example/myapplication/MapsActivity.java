@@ -59,6 +59,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         getLastLocation();
 
+        Button historybutton = findViewById(R.id.history_button);
+
+        historybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MapsActivity.this, HistoryActivity.class));
+            }
+        });
 
 
 
