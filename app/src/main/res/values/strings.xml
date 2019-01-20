@@ -9,4 +9,5 @@
         <item>Neutral</item>
         <item>Excited</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 </resources>

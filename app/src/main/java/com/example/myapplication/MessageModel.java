@@ -9,6 +9,17 @@ public class MessageModel {
     private String message;
     private Date date;
     private String emoji;
+    private int upvotes;
+
+    public String getCoord() {
+        return coord;
+    }
+
+    public void setCoord(String coord) {
+        this.coord = coord;
+    }
+
+    private String coord;
 
     public int getUserid() {
         return userid;
@@ -58,24 +69,8 @@ public class MessageModel {
         this.upvotes = upvotes;
     }
 
-    public int getXcoord() {
-        return xcoord;
-    }
 
-    public void setXcoord(int xcoord) {
-        this.xcoord = xcoord;
-    }
 
-    public int getYcoord() {
-        return ycoord;
-    }
 
-    public void setYcoord(int ycoord) {
-        this.ycoord = ycoord;
-    }
-
-    private int upvotes;
-    private int xcoord;
-    private int ycoord;
 
 }

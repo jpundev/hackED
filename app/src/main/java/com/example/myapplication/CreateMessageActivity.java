@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -25,8 +27,7 @@ public class CreateMessageActivity extends AppCompatActivity {
         final MessageModel messageobject = new MessageModel();
         final EditText messagetext = findViewById(R.id.enter_message);
         final Date date = new Date();
-
-
+        final String latlng = getIntent().getStringExtra("Coord");
 
         Spinner entry_select = findViewById(R.id.emoji_select);
         entry_select.setSelection(0);
@@ -60,6 +61,7 @@ public class CreateMessageActivity extends AppCompatActivity {
                 //messageobject.setxcoord();
                 //messageobject.setycoord();
                 messageobject.setDate(date);
+                messageobject.setCoord(latlng);
                 finish();
 
             }
