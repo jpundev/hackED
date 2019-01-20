@@ -60,6 +60,7 @@ public class CreateMessageActivity extends AppCompatActivity {
                 //messageobject.setxcoord();
                 //messageobject.setycoord();
                 messageobject.setDate(date);
+                finish();
 
             }
         });
